@@ -1,4 +1,8 @@
 import { useState } from "react"
+import { BsCardImage, BsEmojiSmile } from 'react-icons/bs'
+import { RiFileGifLine, RiBarChartHorizontalFill } from 'react-icons/ri'
+import { IoMdCalendar } from 'react-icons/io'
+import { MdOutlineLocationOn } from 'react-icons/md'
 
 
 const style = {
@@ -38,7 +42,14 @@ const TweetBox = () => {
                         onChange={(e) => setTweetMessage(e.target.value)}
                     ></textarea>
                     <div className={style.formLowerContainer}>
-                        <div className={style.iconsContainer}></div>
+                        <div className={style.iconsContainer}>
+                            <BsCardImage className={style.icon} />
+                            <RiFileGifLine className={style.icon} />
+                            <RiBarChartHorizontalFill className={style.icon} />
+                            <BsEmojiSmile className={style.icon} />
+                            <IoMdCalendar className={style.icon} />
+                            <MdOutlineLocationOn className={style.icon} />
+                        </div>
                         <button 
                             type='submit' 
                             onClick={(event) => {postTweet(event)}}
