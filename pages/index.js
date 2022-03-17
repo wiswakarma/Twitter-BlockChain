@@ -17,6 +17,8 @@ const Home = () => {
         <Sidebar />
         <Feed />
         <Widgets />
+
+        
         
       </div>
     </div>
