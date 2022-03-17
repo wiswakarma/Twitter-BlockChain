@@ -12,7 +12,8 @@ import {
     BsBookmarkFill,
     BsPerson,
     BsPersonFill,
-  } from 'react-icons/bs'
+} from 'react-icons/bs'
+import Link from 'next/link'
 
 const style = {
     wrapper: `flex-[0.7] px-8 flex flex-col`,
